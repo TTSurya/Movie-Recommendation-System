@@ -117,5 +117,3 @@ For a $1000 \times 1000$ rank-10 synthetic matrix with an oversampling ratio of 
 ## Bibliography
 
 J.-F. Cai, E. J. Candès, and Z. Shen. *A Singular Value Thresholding Algorithm for Matrix Completion*. SIAM Journal on Optimization, 20(4):1956–1982, 2010.
-
-DOI: https://doi.org/10.1137/080738970
