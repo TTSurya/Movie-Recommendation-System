@@ -27,15 +27,15 @@ Ratings are not independent. A small set of hidden preferences, such as genre, p
 In a latent-factor view,
 
 $$
-M \approx UV^T,
+M \approx UV^T.
 $$
 
-where `U` represents user preferences and `V` represents movie attributes. If only a few latent factors are needed, `M` is approximately low rank.
+Here, `U` represents user preferences and `V` represents movie attributes. If only a few latent factors are needed, `M` is approximately low rank.
 
 The direct formulation is:
 
 $$
-\min_X \operatorname{rank}(X)
+\min_X \mathrm{rank}(X)
 \quad \text{subject to} \quad
 P_\Omega(X) = P_\Omega(M).
 $$
