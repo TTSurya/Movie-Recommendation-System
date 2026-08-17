@@ -40,12 +40,15 @@ $$
 P_\Omega(X) = P_\Omega(M).
 $$
 
-Rank minimization is computationally hard. The nuclear norm, denoted by `||X||_*` and equal to the sum of the singular values of `X`, provides a standard convex relaxation.
+Rank minimization is computationally hard. The nuclear norm, denoted by $\|X\|_*$ and equal to the sum of the singular values of $X$, provides a standard convex relaxation.
 
 SVT solves the regularized problem:
 
 $$
-\min_X \tau \| X \|_* + \frac{1}{2} \| X \|_F^2 \quad \text{subject to} \quad P_\Omega(X) = P_\Omega(M)
+\begin{aligned}
+\min_X \quad & \tau \|X\|_* + \frac{1}{2} \|X\|_F^2 \\
+\text{subject to} \quad & P_\Omega(X) = P_\Omega(M)
+\end{aligned}
 $$
 
 ## Singular Value Thresholding
