@@ -27,8 +27,9 @@ The direct formulation is: $\min_X \mathrm{rank}(X) \quad \text{subject to} \qua
 Rank minimization is computationally hard. The nuclear norm, denoted by $\Vert{}X\Vert{}_*$ and equal to the sum of the singular values of $X$, provides a standard convex relaxation.
 
 SVT solves the regularized problem: 
+
 $$
-\min_X \tau \Vert{}X\Vert{}_* + \frac{1}{2} \Vert{}X\Vert{}_F^2 \quad \text{subject to} \quad P_\Omega(X) = P_\Omega(M)
+\min_X \tau \|X\|_* + \frac{1}{2} \|X\|_F^2 \quad \text{subject to} \quad P_\Omega(X) = P_\Omega(M)
 $$
 
 ## Singular Value Thresholding
