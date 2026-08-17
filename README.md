@@ -45,8 +45,7 @@ Rank minimization is computationally hard. The nuclear norm, denoted by `||X||_*
 SVT solves the regularized problem:
 
 $$
-\min_X \;
-\tau \lVert X \rVert_*
+\min_X \tau \lVert X \rVert_*
 + \frac{1}{2}\lVert X \rVert_F^2
 \quad \text{subject to} \quad
 P_\Omega(X) = P_\Omega(M).
