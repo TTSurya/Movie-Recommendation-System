@@ -440,6 +440,8 @@ Clone the repository and run the setup script:
 git clone https://github.com/TTSurya/Movie-Recommendation-System.git
 cd Movie-Recommendation-System
 .\setup.ps1
+```
+
 ---
 
 ## Run
@@ -447,19 +449,31 @@ cd Movie-Recommendation-System
 ### Tests
 
 ```powershell
-.\.venv\Scripts\python.exe test_svt.py
+python test_svt.py
 ```
 
 ### Synthetic experiment
 
 ```powershell
-.\.venv\Scripts\python.exe experiment.py --size 1000 --rank 10 --oversampling-ratio 6
+python experiment.py --size 1000 --rank 10 --oversampling-ratio 6
 ```
 
 Results are written to:
 
 ```text
 artifacts/experiment.json
+```
+
+### Convergence plot
+
+```powershell
+python plot.py
+```
+
+The convergence plot is saved to 
+
+```text
+artifacts/convergence.png
 ```
 
 ---
