@@ -41,7 +41,7 @@ def main():
     p.add_argument("--seed", type=int, default=42)
     p.add_argument("--output", type=Path, default=Path("artifacts/experiment.json"))
     a = p.parse_args()
-    if a.size < 2 or a.rank < 1 or a.oversampling_ratio <= 0:
+    if a.size < 2 or a.rank < 1 or a.rank > a.size or a.oversampling_ratio <= 0:
         p.error("size and rank must be positive; size must be at least 2")
     result = run(a.size, a.rank, a.oversampling_ratio, a.seed, a.max_iterations, a.delta)
     a.output.parent.mkdir(parents=True, exist_ok=True)
