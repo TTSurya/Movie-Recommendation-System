@@ -334,6 +334,14 @@ The exact result can vary because the synthetic matrix is randomly generated.
 
 ---
 
+## Convergence
+
+For a representative synthetic matrix-completion instance, the observed-entry residual decreases steadily over the SVT iterations.
+
+![SVT convergence](artifacts/convergence.png)
+
+---
+
 ## Testing
 
 Run:
@@ -346,7 +354,17 @@ The tests check two main properties.
 
 ### 1. Singular-value thresholding
 
-For $Y=\begin{bmatrix}5&0\\0&2\end{bmatrix}$ and $\tau=3$,
+For 
+
+```math
+Y =
+\begin{bmatrix}
+5 & 0 \\
+0 & 2
+\end{bmatrix}
+```
+
+and $\tau=3$,
 
 ```math
 D_3(Y)
