@@ -434,19 +434,12 @@ Evaluating only on the ratings used for completion would measure reconstruction 
 
 ## Installation
 
-Create a virtual environment:
+Clone the repository and run the setup script:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
-
-Install dependencies:
-
-```powershell
-pip install -r requirements.txt
-```
-
+git clone https://github.com/TTSurya/Movie-Recommendation-System.git
+cd Movie-Recommendation-System
+.\setup.ps1
 ---
 
 ## Run
@@ -454,13 +447,13 @@ pip install -r requirements.txt
 ### Tests
 
 ```powershell
-python test_svt.py
+.\.venv\Scripts\python.exe test_svt.py
 ```
 
 ### Synthetic experiment
 
 ```powershell
-python experiment.py --size 1000 --rank 10 --oversampling-ratio 6
+.\.venv\Scripts\python.exe experiment.py --size 1000 --rank 10 --oversampling-ratio 6
 ```
 
 Results are written to:
